@@ -69,7 +69,7 @@ def listingsearch(keywords,near=""):
             }
         }
     """    
-    print(gqlvar)
+    #print(gqlvar)
 
     listr = requests.post("https://waybase.com/graphql", 
         json= {'query': query, 'variables':gqlvar})
